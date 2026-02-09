@@ -2237,7 +2237,18 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+/* ===== Fade-in on Scroll ===== */
 
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
