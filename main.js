@@ -133,7 +133,9 @@
     });
   }
 
-  /* ===== Fade-in on Scroll ===== */
+  window.addEventListener("load", initSwiper);
+
+    /* ===== Fade-in on Scroll ===== */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -147,7 +149,5 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade').forEach(el => {
   observer.observe(el);
 });
-
-  window.addEventListener("load", initSwiper);
 
 })();
